@@ -10,7 +10,7 @@ echo "<th>Callsign</th>";
 echo "<th>Departure</th>";
 echo "<th>Destination</th>";
 echo "</tr>";
-foreach( $DH->getClients() as $client ){
+foreach( $DH->getPilots() as $client ){
     
     if( in_array( $client->planned_depairport, $AP ) || in_array( $client->planned_destairport, $AP ) ){
         
